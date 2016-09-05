@@ -1,0 +1,56 @@
+.page-sidebar {
+    width: 140;
+    background-color: rgb(5,182,228);
+    z-index: 1000;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: auto;
+    height: 100%;
+    overflow-y: hidden;
+    position:fixed;
+    
+    .sidebar-header {
+        background-color: rgb(7,172,216);
+        top:0;
+        height: 75;
+        text-align: right;
+        padding-top: 10px;
+        span {
+            height: auto;
+            padding-right: 50px;
+            i {
+                color: white;
+            }
+        }
+    }
+    .sidebar-menu {
+        text-align: right;
+        ul {
+            width:100%;
+            padding-left: 0;
+            list-style: none;
+            li {
+                height: 100px;
+                width:100%;
+                padding-right: 50px;
+                text-align: right;
+                padding-top: 40;
+                span {
+                    text-align: right;
+                    font-size: xx-large;
+                    
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        
+                    }
+                    
+                    
+                }
+            }
+        }
+        
+        
+    }
+}

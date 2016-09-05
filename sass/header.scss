@@ -1,0 +1,131 @@
+.site-header {
+    background-color: white;
+    height: 75;
+    z-index: 999;
+    width:100%;
+    /* replace later with mixin */
+    border-bottom: 1.8px solid rgba(153,153,153,0.20);
+    
+    .header-actions-bar { 
+        font-weight: 300;
+        color: lightgrey;
+        margin-left: 20;
+
+        .profile-img {
+                width: 70px;
+                padding: 0 10 0 10;
+                margin-top: 20;
+        }
+        
+       .header-username {
+            line-height: 5;
+            p{
+                font-size:16;
+                font-weight: 200;
+                color:black;
+                height:75;
+                margin:0;
+            }
+        }    
+        
+        ul {
+            font-size: 38;
+            font-weight: 300;
+            line-height: 2.5;
+            display:inline;
+            height: 75;
+            margin: 0;
+            li {
+                display:inline-block;
+                margin: 0 10 0 10;
+            }
+        }  
+    }
+}
+
+.header-social{
+    float: right;
+    height:75;
+
+    ul {
+        display:inline;
+        font-size: 30;
+        text-align: right;
+        margin:0 15 0 15;
+        line-height: 3;
+        float:right;
+        list-style: none;
+        height:75;
+
+        li{
+            display:inline-block;
+            .social-media-icon {
+                color: white;
+                border-radius: 5px;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 5;
+                background-color: rgb(7,172,216);
+                
+                i:before{
+                    line-height: 1.18;
+                }
+                &:hover {
+                    background-color:  rgb(5,182,228) ;
+                }
+            }
+        }
+    }
+}
+.header-search {
+        width: 60%;
+        display: inline;
+        display:inline-block;
+        margin-left: 10;
+        line-height: 3;
+        a {
+            &:hover {
+                text-decoration: none;
+                color:  rgb(5,182,228) ;
+            }
+            color:rgb(7,172,216);
+        }
+        input {
+            font-size: 18;
+            border:0;
+            text-align: right;
+            &:focus {
+                outline:none;
+            }
+        }
+}
+.header {
+    padding-bottom:0;
+    height:75;
+}
+.header-left{
+    width: 40%;
+    float: left;
+    height:75;
+
+}
+.header-right{
+    width: 55%;
+    float: right;
+    font-size: 25px;
+    line-height: 2.5;
+    height:75;
+    margin:0;
+
+}
+
+.header-profileimg-wrapper {
+    background-color: rgb(7,172,216);
+    font-size: 30;
+    width:40px;
+    height:40px;
+    border-radius: 40px;
+    padding: 4;
+    
+}

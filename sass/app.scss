@@ -1,0 +1,45 @@
+@import "sidebar.scss";
+@import "header.scss";
+@import "mixins.scss";
+@import "homepage.scss";
+@import "campaign-card.scss";
+
+
+$default_font: Montserrat, sans-serif;
+$drop-shadow: 0px 7px 5px -5px rgba(153,153,153,0.49);
+$theme-blue: rgb(5,182,228);
+$sidbar-header-blue: rgb(7,172,216);
+
+
+body {
+    background-color: white;
+    font-family: $default_font;
+    .wrapper{
+        height: 100%;
+    }
+}
+
+.page-content-wrapper{
+    min-height: 100%; 
+    background-color: white;
+    overflow-y: auto;
+    margin-left:140;
+}
+.page-content {
+    display: inline-block;
+    float:left;
+}
+
+.theme-blue {
+    color: $theme-blue;
+}
+
+.text-right-align {
+    text-align: right;
+}
+.text-left-align {
+    text-align: left;
+}
+.text-center-align {
+    text-align: center;
+}

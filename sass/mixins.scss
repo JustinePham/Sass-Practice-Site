@@ -1,0 +1,5 @@
+@mixin boxshadow-style($drop-shadow) {
+    -webkit-box-shadow: 0px 7px 5px -5px rgba(153,153,153,0.49);
+        -moz-box-shadow: $drop-shadow;
+            box-shadow: $drop-shadow;
+}

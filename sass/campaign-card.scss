@@ -1,0 +1,104 @@
+
+ 
+    
+.homepage-campaigns .campaign-card-wrapper {
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;    
+    margin:10 5 10 5;
+}
+
+
+
+.campaign-card {
+    /*min-height: 500;
+    padding:0; */
+    background-color: white;
+        
+    .campaign-card-header {
+        width:100%;
+        padding: 8;
+        
+        .usericon {
+            background-color: rgb(7,172,216);
+            font-size: 30;
+            width:35px;
+            height:35px;
+            border-radius: 35px;
+            padding: 4;
+            float:left;
+        }
+        .name{ 
+            font-family: Montserrat, sans-serif;
+            font-size: 16;
+            float:left;
+            font-weight:300;
+            padding: 8;
+        }
+        .timeicon{
+            float:right;
+            font-size: 16;
+            padding:10 0 7;
+            color:#bfbfbf;
+            font-weight:50;
+        }
+        .time{ 
+            float:right;
+            color: #bfbfbf;
+            font-weight:50;
+            font-size: 14;
+            padding:8 0 8;
+
+        }
+    }
+    .campaign-img-wrapper {
+        
+        img {
+            margin-top: 4;
+        }
+    }
+    .campaign-card-title {
+        font-size: 16;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 1;
+        padding:15;
+    }
+    .campaign-card-info {
+        padding: 0 20 0 20;
+        font-family: Montserrat, sans-serif;
+        table {
+            width: 100%;
+            margin: 0;
+            tbody {
+                tr {
+                    color: #bfbfbf;
+                    border-bottom: 1px dashed gainsboro;
+                    td {
+                        padding: 5 0 5;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    .campaign-footer {
+        font-family: Montserrat, sans-serif;
+        font-size:12;
+        color:#bfbfbf;
+        padding: 15;
+        font-weight:100;
+        
+        span.netgained {
+            width:100%;
+            font-size: 20;
+            font-weight: 600;
+            letter-spacing: 1;
+        }
+    }
+    
+    
+        
+    
+}

@@ -1,0 +1,264 @@
+.page-sidebar {
+  width: 140;
+  background-color: #05b6e4;
+  z-index: 1000;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: auto;
+  height: 100%;
+  overflow-y: hidden;
+  position: fixed; }
+  .page-sidebar .sidebar-header {
+    background-color: #07acd8;
+    top: 0;
+    height: 75;
+    text-align: right;
+    padding-top: 10px; }
+    .page-sidebar .sidebar-header span {
+      height: auto;
+      padding-right: 50px; }
+      .page-sidebar .sidebar-header span i {
+        color: white; }
+  .page-sidebar .sidebar-menu {
+    text-align: right; }
+    .page-sidebar .sidebar-menu ul {
+      width: 100%;
+      padding-left: 0;
+      list-style: none; }
+      .page-sidebar .sidebar-menu ul li {
+        height: 100px;
+        width: 100%;
+        padding-right: 50px;
+        text-align: right;
+        padding-top: 40; }
+        .page-sidebar .sidebar-menu ul li span {
+          text-align: right;
+          font-size: xx-large; }
+          .page-sidebar .sidebar-menu ul li span a {
+            color: white;
+            text-decoration: none; }
+
+.site-header {
+  background-color: white;
+  height: 75;
+  z-index: 999;
+  width: 100%;
+  /* replace later with mixin */
+  border-bottom: 1.8px solid rgba(153, 153, 153, 0.2); }
+  .site-header .header-actions-bar {
+    font-weight: 300;
+    color: lightgrey;
+    margin-left: 20; }
+    .site-header .header-actions-bar .profile-img {
+      width: 70px;
+      padding: 0 10 0 10;
+      margin-top: 20; }
+    .site-header .header-actions-bar .header-username {
+      line-height: 5; }
+      .site-header .header-actions-bar .header-username p {
+        font-size: 16;
+        font-weight: 200;
+        color: black;
+        height: 75;
+        margin: 0; }
+    .site-header .header-actions-bar ul {
+      font-size: 38;
+      font-weight: 300;
+      line-height: 2.5;
+      display: inline;
+      height: 75;
+      margin: 0; }
+      .site-header .header-actions-bar ul li {
+        display: inline-block;
+        margin: 0 10 0 10; }
+
+.header-social {
+  float: right;
+  height: 75; }
+  .header-social ul {
+    display: inline;
+    font-size: 30;
+    text-align: right;
+    margin: 0 15 0 15;
+    line-height: 3;
+    float: right;
+    list-style: none;
+    height: 75; }
+    .header-social ul li {
+      display: inline-block; }
+      .header-social ul li .social-media-icon {
+        color: white;
+        border-radius: 5px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 5;
+        background-color: #07acd8; }
+        .header-social ul li .social-media-icon i:before {
+          line-height: 1.18; }
+        .header-social ul li .social-media-icon:hover {
+          background-color: #05b6e4; }
+
+.header-search {
+  width: 60%;
+  display: inline;
+  display: inline-block;
+  margin-left: 10;
+  line-height: 3; }
+  .header-search a {
+    color: #07acd8; }
+    .header-search a:hover {
+      text-decoration: none;
+      color: #05b6e4; }
+  .header-search input {
+    font-size: 18;
+    border: 0;
+    text-align: right; }
+    .header-search input:focus {
+      outline: none; }
+
+.header {
+  padding-bottom: 0;
+  height: 75; }
+
+.header-left {
+  width: 40%;
+  float: left;
+  height: 75; }
+
+.header-right {
+  width: 55%;
+  float: right;
+  font-size: 25px;
+  line-height: 2.5;
+  height: 75;
+  margin: 0; }
+
+.header-profileimg-wrapper {
+  background-color: #07acd8;
+  font-size: 30;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  padding: 4; }
+
+.homepage-slider {
+  margin-top: 0;
+  padding-top: 0;
+  height: 300; }
+
+.homepage-campaign-bar {
+  height: 70;
+  border-bottom: 1px solid darkgray;
+  border-top: 1px solid darkgray; }
+
+.homepage-campaigns {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 5 0 5; }
+
+.homepage-campaigns .campaign-card-wrapper {
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  margin: 10 5 10 5; }
+
+.campaign-card {
+  /*min-height: 500;
+  padding:0; */
+  background-color: white; }
+  .campaign-card .campaign-card-header {
+    width: 100%;
+    padding: 8; }
+    .campaign-card .campaign-card-header .usericon {
+      background-color: #07acd8;
+      font-size: 30;
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+      padding: 4;
+      float: left; }
+    .campaign-card .campaign-card-header .name {
+      font-family: Montserrat, sans-serif;
+      font-size: 16;
+      float: left;
+      font-weight: 300;
+      padding: 8; }
+    .campaign-card .campaign-card-header .timeicon {
+      float: right;
+      font-size: 16;
+      padding: 10 0 7;
+      color: #bfbfbf;
+      font-weight: 50; }
+    .campaign-card .campaign-card-header .time {
+      float: right;
+      color: #bfbfbf;
+      font-weight: 50;
+      font-size: 14;
+      padding: 8 0 8; }
+  .campaign-card .campaign-img-wrapper img {
+    margin-top: 4; }
+  .campaign-card .campaign-card-title {
+    font-size: 16;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1;
+    padding: 15; }
+  .campaign-card .campaign-card-info {
+    padding: 0 20 0 20;
+    font-family: Montserrat, sans-serif; }
+    .campaign-card .campaign-card-info table {
+      width: 100%;
+      margin: 0; }
+      .campaign-card .campaign-card-info table tbody tr {
+        color: #bfbfbf;
+        border-bottom: 1px dashed gainsboro; }
+        .campaign-card .campaign-card-info table tbody tr td {
+          padding: 5 0 5; }
+  .campaign-card .campaign-footer {
+    font-family: Montserrat, sans-serif;
+    font-size: 12;
+    color: #bfbfbf;
+    padding: 15;
+    font-weight: 100; }
+    .campaign-card .campaign-footer span.netgained {
+      width: 100%;
+      font-size: 20;
+      font-weight: 600;
+      letter-spacing: 1; }
+
+body {
+  background-color: white;
+  font-family: Montserrat, sans-serif; }
+  body .wrapper {
+    height: 100%; }
+
+.page-content-wrapper {
+  min-height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  margin-left: 140; }
+
+.page-content {
+  display: inline-block;
+  float: left; }
+
+.theme-blue {
+  color: #05b6e4; }
+
+.text-right-align {
+  text-align: right; }
+
+.text-left-align {
+  text-align: left; }
+
+.text-center-align {
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */

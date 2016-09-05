@@ -1,0 +1,20 @@
+.homepage-slider {
+    margin-top:0;
+    padding-top:0;
+    height:300;
+}
+.homepage-campaign-bar {
+    height: 70;
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+
+}
+
+.homepage-campaigns {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;    
+    padding: 0 5 0 5;
+}
