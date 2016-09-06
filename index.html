@@ -120,7 +120,7 @@
                     
                     <!-- PAGE CONTEXT IS TO BE PLACED HERE -->
                     <div class="row">
-                        <div id="homepage-carousel" class="homepage-slider carousel slide" data-ride="carousel">
+                            <div id="homepage-carousel" class="homepage-slider carousel slide" data-ride="carousel">
                               <!-- Indicators -->
                               <ol class="carousel-indicators">
                                 <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
@@ -134,7 +134,7 @@
                                     slide 1
                                   </div>
                                 </div>
-                                <div class="item" style="background-image: url(img/6768666-1080p-wallpapers.jpg);">
+                                <div class="item" style="background-image: url('img/6768666-1080p-wallpapers.jpg');">
                                   <div class="carousel-caption">
                                     slide 2
                                   </div>
@@ -154,7 +154,7 @@
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                               </a>
-                        </div>
+                            </div>
                         
                             <div class="homepage-campaign-bar">
                             
@@ -172,9 +172,12 @@
                                             <div class="time">23min</div>
                                             <span class="timeicon"><i class="icon-time-icon"></i></span>
                                         </div>
-                                        <div class="campaign-img-wrapper">
-                                            <img src="#"  style="height:300; width:100%;"/>
-                                            <div class="campaign-card-tags"></div>
+                                        <div class="campaign-img-holder" style="background image: url('http://www.hercampus.com/sites/default/files/2016/04/17/Fashion1.jpg');">
+                                            <div class="campaign-img-buffer"></div>
+                                            <ul class="campaign-card-tags">
+                                                <li class="tag">Fashion</li>
+                                                <li class="tag">Clothing</li>
+                                            </ul>
                                         </div>
                                         <div class="campaign-card-title">GANT SOMMER KOLLEKSJON</div>
                                         <div class="campaign-card-info">
@@ -208,9 +211,12 @@
                                             <div class="time">23min</div>
                                             <span class="timeicon"><i class="icon-time-icon"></i></span>
                                         </div>
-                                        <div class="campaign-img-wrapper">
-                                            <img src="#"  style="height:300; width:100%;"/>
-                                            <div class="campaign-card-tags"></div>
+                                        <div class="campaign-img-holder" style="background image:url('img/cool_abstract_cube_wallpaper_hd.jpg');">
+                                            <div class="campaign-img-buffer"></div>
+                                            <ul class="campaign-card-tags">
+                                                <li class="tag">Fashion</li>
+                                                <li class="tag">Clothing</li>
+                                            </ul>
                                         </div>
                                         <div class="campaign-card-title">GANT SOMMER KOLLEKSJON</div>
                                         <div class="campaign-card-info">
@@ -244,9 +250,12 @@
                                             <div class="time">23min</div>
                                             <span class="timeicon"><i class="icon-time-icon"></i></span>
                                         </div>
-                                        <div class="campaign-img-wrapper">
-                                            <img src="#"  style="height:300; width:100%;"/>
-                                            <div class="campaign-card-tags"></div>
+                                        <div class="campaign-img-holder" style="background image:url('');">
+                                            <div class="campaign-img-buffer"></div>
+                                            <ul class="campaign-card-tags">
+                                                <li class="tag">Fashion</li>
+                                                <li class="tag">Clothing</li>
+                                            </ul>
                                         </div>
                                         <div class="campaign-card-title">GANT SOMMER KOLLEKSJON</div>
                                         <div class="campaign-card-info">
@@ -280,9 +289,12 @@
                                             <div class="time">23min</div>
                                             <span class="timeicon"><i class="icon-time-icon"></i></span>
                                         </div>
-                                        <div class="campaign-img-wrapper">
-                                            <img src="#"  style="height:300; width:100%;"/>
-                                            <div class="campaign-card-tags"></div>
+                                        <div class="campaign-img-holder" style="background image:url('');">
+                                            <div class="campaign-img-buffer"></div>
+                                            <ul class="campaign-card-tags">
+                                                <li class="tag">Fashion</li>
+                                                <li class="tag">Clothing</li>
+                                            </ul>
                                         </div>
                                         <div class="campaign-card-title">GANT SOMMER KOLLEKSJON</div>
                                         <div class="campaign-card-info">
@@ -303,9 +315,9 @@
                                             <span class="theme-blue row netgained">KR 60 000,-</span>
                                             <span>for 4 posts</span>
                                         </div>
-                                    </div>
+                                    </div> 
                                    
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     <!-- PAGE CONTENT ENDS -->
@@ -313,12 +325,17 @@
             </div>
         </div>
         
-        <!-- BOOTSTRAP 3.3.7 -->
+        <!-- BOOTSTRAP3 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- JAVASCRIPT -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/jquery.min.js"></script>       
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>
+            $('.carousel').carousel({
+                interval: 5000 //changes the speed
+            })
+        </script>
     </body>
     
 </html>
