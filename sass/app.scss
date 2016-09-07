@@ -43,3 +43,18 @@ body {
 .text-center-align {
     text-align: center;
 }
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.overlay {
+  position:absolute;
+  pointer-events: none;
+  background-color: rgba(0,0,0,.75);
+  width:100%;
+}

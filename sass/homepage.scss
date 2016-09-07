@@ -7,10 +7,23 @@
     height: 70;
     border-bottom: 1px solid darkgray;
     border-top: 1px solid darkgray;
+    font-weight: 100;
+    font-size: 20;
+    font-family: Montserrat, sans-serif;
+    padding: 20;
+    ul {
+        display:inline-block;
+    }
+    
+    .bar-content {
+        label {
+            margin-right: 25;
+        }
+    }
 }
 
 .homepage-campaigns {
-    background-color: lightgray;
+    background-color: gainsboro;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
