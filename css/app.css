@@ -336,10 +336,7 @@ body {
 .right {
   float: right; }
 
-.overlay {
-  position: absolute;
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.75);
-  width: 100%; }
+.hover-wrapper {
+  background-color: black; }
 
 /*# sourceMappingURL=app.css.map */
