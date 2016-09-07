@@ -318,7 +318,12 @@
     display: inline-flex;
     margin: -15 0 -15 0;
     width: 35%;
-    min-height: 300; }
+    height: 100%;
+    background-color: #fafafa; }
+    .modal-body .left-container .block1 {
+      border-bottom: 1.8px solid rgba(153, 153, 153, 0.2);
+      height: 55%;
+      width: 100%; }
   .modal-body .right-container {
     display: inline-flex;
     height: 100%;
