@@ -302,6 +302,11 @@
     .campaign-card-tags li.tag:hover::after {
       border-left-color: #05b6e4; }
 
+.modal-header {
+  min-height: 400;
+  background-size: cover;
+  background-position: center; }
+
 body {
   background-color: white;
   font-family: Montserrat, sans-serif; }
