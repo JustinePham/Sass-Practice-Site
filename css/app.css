@@ -305,7 +305,55 @@
 .modal-header {
   min-height: 400;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  font-size: 30;
+  color: lightgrey; }
+  .modal-header i {
+    text-shadow: 0px 2px 12px black; }
+
+.modal-body {
+  padding: 0; }
+  .modal-body .modal-campaign-wrapper {
+    margin: -15;
+    height: 500; }
+    .modal-body .modal-campaign-wrapper .left-container {
+      display: inline-flex;
+      height: 100%;
+      background-color: #fafafa; }
+      .modal-body .modal-campaign-wrapper .left-container .block1 {
+        border-bottom: 1.8px solid rgba(153, 153, 153, 0.2);
+        width: 100%;
+        height: 65%;
+        position: absolute;
+        left: 0;
+        padding: 15; }
+        .modal-body .modal-campaign-wrapper .left-container .block1 .calender {
+          height: auto;
+          padding: 15 15 0 0; }
+          .modal-body .modal-campaign-wrapper .left-container .block1 .calender .day {
+            display: inline-flex;
+            height: 20%;
+            width: 22%;
+            margin: 2;
+            background: blue; }
+      .modal-body .modal-campaign-wrapper .left-container .block2 {
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        left: 0; }
+    .modal-body .modal-campaign-wrapper .right-container {
+      height: 100%;
+      border-left: 1.8px solid rgba(153, 153, 153, 0.2); }
+
+.modal-footer {
+  height: 95; }
+
+.modal-profile-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  background-color: blue;
+  margin: 15 40% 10 40%; }
 
 body {
   background-color: white;
@@ -326,6 +374,12 @@ body {
 .theme-blue {
   color: #05b6e4; }
 
+.theme-lightgrey {
+  color: #fafafa; }
+
+.theme-darkgrey {
+  color: #999999; }
+
 .text-right-align {
   text-align: right; }
 
@@ -334,12 +388,6 @@ body {
 
 .text-center-align {
   text-align: center; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
 
 .hover-wrapper {
   background-color: black; }
