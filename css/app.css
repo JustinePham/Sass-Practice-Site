@@ -262,45 +262,42 @@
   padding: 0 10 0 10;
   bottom: 0; }
   .campaign-card-tags ul {
-    left: 0; }
+    left: 0;
+    bottom: 0; }
     .campaign-card-tags ul li {
       float: left; }
   .campaign-card-tags li.tag {
-    font-family: Montserrat, sans-serif;
+    border-radius: 0;
     display: inline-block;
-    height: 24px;
-    line-height: 24px;
+    text-transform: uppercase;
+    border: 0;
     position: relative;
-    margin: 0 16px 8px 0;
-    padding: 0 10px 0 12px;
-    background-color: gainsboro;
-    -webkit-border-top-right-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    color: #05b6e4;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: bold; }
-    .campaign-card-tags li.tag:hover {
-      background-color: #05b6e4;
-      border-right-color: #05b6e4;
-      color: white; }
+    background-color: #ebebeb;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    padding: 3px 8px;
+    line-height: 18px;
+    margin-right: 11px;
+    margin-bottom: 10px; }
     .campaign-card-tags li.tag:after {
-      content: '';
-      display: block;
-      position: absolute;
       left: 100%;
       top: 50%;
-      margin-top: -10px;
-      width: 0;
+      border: solid transparent;
+      content: " ";
       height: 0;
-      border-top: 11px solid transparent;
-      border-right: 11px solid transparent;
-      border-bottom: 11px solid transparent;
-      border-left: 11px solid gainsboro; }
-    .campaign-card-tags li.tag:hover::after {
-      border-left-color: #05b6e4; }
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(221, 221, 221, 0);
+      border-left-color: #ebebeb;
+      border-width: 12px;
+      margin-top: -12px;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
+    .campaign-card-tags li.tag:hover {
+      background-color: #ddd; }
+      .campaign-card-tags li.tag:hover:after {
+        border-left-color: #ddd; }
 
 .modal-header {
   min-height: 400;
@@ -334,7 +331,8 @@
             height: 18%;
             width: 22%;
             margin: 2;
-            background: blue; }
+            background: transparent;
+            border: 2px solid #05b6e4; }
         .modal-body .modal-campaign-wrapper .left-container .block1 .calender-key {
           width: 100%; }
       .modal-body .modal-campaign-wrapper .left-container .block2 {
@@ -342,6 +340,7 @@
         width: 100%;
         left: 0; }
     .modal-body .modal-campaign-wrapper .right-container {
+      padding: 25;
       height: 100%;
       border-left: 1.8px solid rgba(153, 153, 153, 0.2); }
 
@@ -361,7 +360,7 @@
   height: 60px;
   width: 60px;
   border-radius: 60px;
-  background-color: blue;
+  background-color: #05b6e4;
   margin: 15 40% 10 40%; }
 
 .campaign-info-table {
@@ -369,6 +368,35 @@
   width: 100%; }
   .campaign-info-table th {
     width: 50%; }
+  .campaign-info-table tbody tr td .tag {
+    border-radius: 0;
+    text-transform: uppercase;
+    border: 0;
+    position: relative;
+    background-color: #ebebeb;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    padding: 3px 8px;
+    line-height: 18px; }
+    .campaign-info-table tbody tr td .tag:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(221, 221, 221, 0);
+      border-left-color: #ebebeb;
+      border-width: 12px;
+      margin-top: -12px;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
+    .campaign-info-table tbody tr td .tag:hover {
+      background-color: #ddd; }
+      .campaign-info-table tbody tr td .tag:hover:after {
+        border-left-color: #ddd; }
 
 body {
   background-color: white;

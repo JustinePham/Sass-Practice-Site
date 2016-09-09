@@ -113,53 +113,47 @@
     bottom: 0;
     ul { 
         left: 0;
+        bottom:0;
         li {
             float: left; 
         }
     }
     
     li.tag {
-        font-family: Montserrat, sans-serif;
-        display: inline-block;
-        height: 24px;
-        line-height: 24px;
+        border-radius: 0;
+        display:inline-block;
+        text-transform: uppercase;
+        border: 0;
         position: relative;
-        margin: 0 16px 8px 0;
-        padding: 0 10px 0 12px;
-        background-color: gainsboro;    
-        -webkit-border-top-right-radius: 3px;
-        border-top-right-radius: 3px;
-        -webkit-border-bottom-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        color: rgb(5,182,228);
-        font-size: 12px;
-        text-decoration: none;
-        font-weight: bold;
-        
-        &:hover {
-          background-color:rgb(5,182,228);
-          border-right-color:rgb(5,182,228);  
-          color: white;
-        }
+        background-color: #ebebeb;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        padding: 3px 8px;
+        line-height: 18px;
+        margin-right: 11px;
+        margin-bottom: 10px;
         &:after {
-            content: '';
-            display: block;  
-            position: absolute;
             left: 100%;
             top: 50%;
-            margin-top: -10px;
-            width: 0;
+            border: solid transparent;
+            content: " ";
             height: 0;
-            border-top: 11px solid transparent;
-            border-right: 11px solid transparent;
-            border-bottom: 11px solid transparent;
-            border-left: 11px solid gainsboro;
-            
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(221, 221, 221, 0);
+            border-left-color: #ebebeb;
+            border-width: 12px;
+            margin-top: -12px; 
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
         }
-        &:hover::after {
-            border-left-color:rgb(5,182,228);
+        &:hover {
+            background-color: #ddd;
+            &:after {
+                border-left-color: #ddd;
+            }
         }
-       
     }
 }
 

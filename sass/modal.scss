@@ -35,7 +35,8 @@
                         height: 18%;
                         width: 22%;
                         margin: 2;
-                        background: blue;
+                        background: transparent;
+                        border:2px solid rgb(5,182,228);
                     }
                 }
                 .calender-key {
@@ -51,6 +52,7 @@
             }
         }
         .right-container {
+            padding: 25;
             height: 100%;
             border-left: 1.8px solid rgba(153,153,153,0.20);
         }
@@ -79,7 +81,7 @@
     height:60px;
     width:60px;
     border-radius: 60px;
-    background-color:blue;
+    background-color: rgb(5,182,228);
     margin: 15 40% 10 40%;
 }
 
@@ -89,5 +91,44 @@
     th {
         width:50%;
     }
-    
+    tbody {
+        tr {
+            td{
+                .tag {
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    border: 0;
+                    position: relative;
+                    background-color: #ebebeb;
+                    -webkit-transition: all .3s ease-out;
+                    transition: all .3s ease-out;
+                    padding: 3px 8px;
+                    line-height: 18px;
+                    
+                    &:after {
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                        border-color: rgba(221, 221, 221, 0);
+                        border-left-color: #ebebeb;
+                        border-width: 12px;
+                        margin-top: -12px; 
+                        -webkit-transition: all .3s ease-out;
+                        transition: all .3s ease-out;
+                    }
+                    &:hover {
+                        background-color: #ddd;
+                        &:after {
+                            border-left-color: #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
