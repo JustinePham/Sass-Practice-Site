@@ -12,7 +12,7 @@
 
 .modal-body {
     padding: 0;
-    
+    font-family: Montserrat, sans-serif;
     .modal-campaign-wrapper {
         margin: -15;
         height: 500;
@@ -60,7 +60,18 @@
 
 .modal-footer {
     height:95;
+    font-family: Montserrat, sans-serif;
     .footer-block{
+        .modal-footer-left {
+            width: calc(100% - 200px);
+        }
+        .apply-btn {
+            background-color: transparent;
+            border:2px solid rgb(5,182,228);
+            font-size: 20;
+            height: 60;
+            width: 200;
+        }
     }
 }
 
@@ -70,4 +81,13 @@
     border-radius: 60px;
     background-color:blue;
     margin: 15 40% 10 40%;
+}
+
+.campaign-info-table {
+    padding: 10;
+    width: 100%;
+    th {
+        width:50%;
+    }
+    
 }
