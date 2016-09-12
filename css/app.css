@@ -229,7 +229,8 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: 1;
-    padding: 15; }
+    padding: 15;
+    text-transform: uppercase; }
   .campaign-card .campaign-card-info {
     padding: 0 20 0 20;
     font-family: Montserrat, sans-serif; }

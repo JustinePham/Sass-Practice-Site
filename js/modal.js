@@ -1,18 +1,19 @@
-$('.campaign-card').on("click", function(){
+$('.campaign-card').on("click", function() {
     var attribute = $(this).children('div.campaign-img-holder').attr("style");
-    console.log(attribute);
     $('.modal-header').attr("style", attribute);
+    
+    var campaignTitle= $('#campaignTitle', this).text();
+    var companyName =  $('#companyName', this).text();
+    var totalAmt =  $('#total', this).text();
+    var antPost =  $('#antPost', this).text();
+    var minFollowers =  $('#minFollowers', this).text();
+    
+    $('.company-name').text(companyName);
+    $('.campaign-title').text(campaignTitle);
+    $('.total-amount').text(totalAmt);
+    $('.ant-post').text(antPost);
+    $('.min-followers').text(minFollowers);   
 });
 
-var campaignTitle = document.getElementById("campaignTitle").innerHTML;
-var companyName = document.getElementById("companyName").innerHTML;
-var totalAmt = document.getElementById("total").innerHTML;
-var antPost = document.getElementById("antPost").innerHTML;
-var minFollowers = document.getElementById("minFollowers").innerHTML;
 
 
-$('.company-name').append(companyName);
-$('.campaign-title').append(campaignTitle);
-$('.total-amount').append(totalAmt);
-$('.ant-post').append(antPost);
-$('.min-followers').append(minFollowers);
