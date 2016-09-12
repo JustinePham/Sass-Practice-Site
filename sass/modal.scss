@@ -12,20 +12,18 @@
 
 .modal-body {
     padding: 0;
-    
+    font-family: Montserrat, sans-serif;
     .modal-campaign-wrapper {
         margin: -15;
         height: 500;
         .left-container{
-            display:inline-flex;
             height:100%;
             background-color: #fafafa;
             
             .block1 {
                 border-bottom: 1.8px solid rgba(153,153,153,0.20);
                 width: 100%;
-                height:65%;
-                position:absolute;
+                height:70%;
                 left:0;
                 padding: 15;
                 .calender {
@@ -34,24 +32,37 @@
                     
                     .day {
                         display: inline-flex;
-                        height: 20%;
+                        height: 18%;
                         width: 22%;
                         margin: 2;
-                        background: blue;
+                        background: transparent;
+                        border:2px solid gainsboro;
                     }
+                }
+                .calender-key {
+                    width:100%;
+                    
                 }
             }
             .block2 { 
-                position:absolute;
-                top:65%;
+                height:30%;
                 width:100%;
                 left:0;
                 
+                .company-name {
+                    font-size: large;
+                }                
             }
         }
         .right-container {
+            padding: 25;
             height: 100%;
             border-left: 1.8px solid rgba(153,153,153,0.20);
+            
+            .campaign-title {
+                font-size: x-large;
+                text-transform: uppercase;
+            }
         }
     }
     
@@ -59,7 +70,22 @@
 
 .modal-footer {
     height:95;
+    font-family: Montserrat, sans-serif;
     .footer-block{
+        .modal-footer-left {
+            width: calc(100% - 200px);
+        }
+        .apply-btn {
+            background-color: transparent;
+            border:2px solid rgb(5,182,228);
+            font-size: 20;
+            height: 60;
+            width: 200;
+        }
+        .total-amount {
+            font-size: x-large;
+            font-weight: 300;
+        }
     }
 }
 
@@ -67,6 +93,60 @@
     height:60px;
     width:60px;
     border-radius: 60px;
-    background-color:blue;
+    background-color: rgb(5,182,228);
     margin: 15 40% 10 40%;
+}
+
+.campaign-info-table {
+    padding: 10;
+    width: 100%;
+    th {
+        width:50%;
+        padding-left: 10px;
+    }
+    tbody {
+        tr {
+            td{
+                padding: 10px 10px 20px 10px;
+                
+                .tag {
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    border: 0;
+                    position: relative;
+                    background-color: #ebebeb;
+                    -webkit-transition: all .3s ease-out;
+                    transition: all .3s ease-out;
+                    padding: 3px 8px;
+                    line-height: 18px;
+                    margin-right: 11px;
+                    margin-bottom: 10px;
+                    display:inline-block;
+                    
+                    &:after {
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                        border-color: rgba(221, 221, 221, 0);
+                        border-left-color: #ebebeb;
+                        border-width: 12px;
+                        margin-top: -12px; 
+                        -webkit-transition: all .3s ease-out;
+                        transition: all .3s ease-out;
+                    }
+                    &:hover {
+                        background-color: #ddd;
+                        &:after {
+                            border-left-color: #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
