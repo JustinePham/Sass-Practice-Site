@@ -175,9 +175,8 @@
                                         <div class="campaign-card" data-toggle="modal" data-target=".campaign-modal">
                                             <div class="campaign-card-header">     
                                                 <div class="usericon">
-
                                                 </div>
-                                                <div class="name">Gant Oslo</div>
+                                                <div class="name" id="companyName">Gant Oslo</div>
                                                 <div class="time">23min</div>
                                                 <span class="timeicon"><i class="icon-time-icon"></i></span>
                                             </div>
@@ -188,28 +187,29 @@
                                                     <li class="tag">Clothing</li>
                                                 </ul>
                                             </div>
-                                            <div class="campaign-card-title">GANT SOMMER KOLLEKSJON</div>
+                                            <div class="campaign-card-title" id="campaignTitle">GANT SOMMER KOLLEKSJON</div>
                                             <div class="campaign-card-info">
                                                 <table>
                                                     <tbody>
                                                         <tr>
                                                             <td>Min Followers</td>
-                                                            <td class="theme-blue text-right-align">8k +</td>
+                                                            <td class="theme-blue text-right-align" id="minFollowers">8k +</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Ant. Post</td>
-                                                            <td class="theme-blue text-right-align">4</td>
+                                                            <td class="theme-blue text-right-align" id="antPost">4</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                             <div class="campaign-footer text-center-align">
-                                                <span class="theme-blue row netgained">KR 60 000,-</span>
+                                                <span class="theme-blue row netgained" id="total">KR 60 000,-</span>
                                                 <span>for 4 posts</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>     
+                                
                                 <div class="campaign-card-wrapper">
                                     <div class="hover-wrapper">
                                         <div class="campaign-card" data-toggle="modal" data-target=".campaign-modal">
@@ -217,7 +217,7 @@
                                                 <div class="usericon">
 
                                                 </div>
-                                                <div class="name">Gant Oslo</div>
+                                                <div class="name"></div>
                                                 <div class="time">23min</div>
                                                 <span class="timeicon"><i class="icon-time-icon"></i></span>
                                             </div>
@@ -284,7 +284,7 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>Ant. Post</td>
-                                                                <td class="theme-blue text-right-align">4</td>
+                                                                <td class="theme-blue text-right-align" id="antPost">4</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -383,15 +383,15 @@
                                     <div class="block2 col-sm-12"> 
                                         <div class="user-img-wrapper">
                                             <div class="modal-profile-img"></div>
-                                            <p class="text-center-align company-name">Gant Oslo</p>
-                                            <p class="text-center-align company-location"></p>
+                                            <p class="text-center-align company-name"></p>
+                                            <p class="text-center-align company-location">Oslo, Norway</p>
                                         </div>
                                     </div>
                                 </div>
                                 
                             </div>
                             <div class="pull-right col-sm-8 right-container">
-                                <p class="text-center-align">GANT SOMMER KOLLEKSJON</p>
+                                <p class="text-center-align campaign-title"></p>
                                 <p class="text-center-align">campaign description here...</p>
                                 <div>
                                     <table class="campaign-info-table">
@@ -399,24 +399,28 @@
                                         <th>TYPE KAMPANJE</th>
                                         <tbody>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
+                                                <td>
+                                                    <div class="tag">Fashion</div>
+                                                    <div class="tag">Clothing</div>
+                                                </td>
+                                                <td> Produkt
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th>MENTIONS</th>
                                                 <th>TID</th>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
+                                                <td>#Nike, GSport @gsportskoyen</td>
+                                                <td> Uke 8, 10 og 13 </td>
                                             </tr>
                                             <tr>
                                                 <th>MIN. FOLLOWERS</th>
                                                 <th>ANT. POSTS</th>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
+                                                <td class="theme-blue min-followers"></td>
+                                                <td class="theme-blue ant-post"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -429,7 +433,7 @@
                         <div class="footer-block">
                             <span class="modal-footer-left">
                                  <span class="pull-left">Belønning</span>
-                                 <span class="theme-blue">kr 6546,-</span>
+                                 <span class="theme-blue total-amount"></span>
                             </span>
                             <button type="button" class="apply-btn theme-blue" data-dismiss="modal">Apply</button>
                         </div>
