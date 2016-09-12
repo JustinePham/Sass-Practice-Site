@@ -229,7 +229,8 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: 1;
-    padding: 15; }
+    padding: 15;
+    text-transform: uppercase; }
   .campaign-card .campaign-card-info {
     padding: 0 20 0 20;
     font-family: Montserrat, sans-serif; }
@@ -313,7 +314,7 @@
   font-family: Montserrat, sans-serif; }
   .modal-body .modal-campaign-wrapper {
     margin: -15;
-    height: 500; }
+    height: 550; }
     .modal-body .modal-campaign-wrapper .left-container {
       height: 100%;
       background-color: #fafafa; }
