@@ -357,14 +357,15 @@
     width: 200; }
   .modal-footer .footer-block .total-amount {
     font-size: x-large;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 15; }
 
 .modal-profile-img {
   height: 60px;
   width: 60px;
   border-radius: 60px;
   background-color: #05b6e4;
-  margin: 15 40% 10 40%; }
+  margin: 20 40% 10 40%; }
 
 .campaign-info-table {
   padding: 10;
@@ -373,7 +374,8 @@
     width: 50%;
     padding-left: 10px; }
   .campaign-info-table tbody tr td {
-    padding: 10px 10px 20px 10px; }
+    padding: 10px 10px 20px 10px;
+    vertical-align: top; }
     .campaign-info-table tbody tr td .tag {
       border-radius: 0;
       text-transform: uppercase;

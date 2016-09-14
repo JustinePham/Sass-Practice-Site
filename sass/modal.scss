@@ -85,6 +85,7 @@
         .total-amount {
             font-size: x-large;
             font-weight: 300;
+            padding:15;
         }
     }
 }
@@ -94,7 +95,7 @@
     width:60px;
     border-radius: 60px;
     background-color: rgb(5,182,228);
-    margin: 15 40% 10 40%;
+    margin: 20 40% 10 40%;
 }
 
 .campaign-info-table {
@@ -108,7 +109,7 @@
         tr {
             td{
                 padding: 10px 10px 20px 10px;
-                
+                vertical-align: top;
                 .tag {
                     border-radius: 0;
                     text-transform: uppercase;
