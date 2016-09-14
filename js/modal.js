@@ -7,12 +7,16 @@ $('.campaign-card').on("click", function() {
     var totalAmt =  $('#total', this).text();
     var antPost =  $('#antPost', this).text();
     var minFollowers =  $('#minFollowers', this).text();
+    var categories = $('.campaign-card-tags', this).html();
+    
+    console.log(categories);
     
     $('.company-name').text(companyName);
     $('.campaign-title').text(campaignTitle);
     $('.total-amount').text(totalAmt);
     $('.ant-post').text(antPost);
     $('.min-followers').text(minFollowers);   
+    $('.modal-card-tags').html(categories);
 });
 
 

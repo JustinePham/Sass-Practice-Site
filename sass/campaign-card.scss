@@ -54,11 +54,8 @@
         min-height: 300;
         background-size: cover;
         background-position: center;
+        position: relative;
         
-        .campaign-img-buffer {
-            margin-top: 4;
-            min-height: 300;
-        }
     }
     .campaign-card-title {
         font-size: 16;
@@ -104,6 +101,8 @@
     
 }
 
+
+
 .campaign-card-tags {
     list-style: none;
     margin: 0;
@@ -112,15 +111,9 @@
     color:white;
     padding:0 10 0 10;
     bottom: 0;
-    ul { 
-        left: 0;
-        bottom:0;
-        li {
-            float: left; 
-        }
-    }
+    position: absolute;
     
-    li.tag {
+    .tag {
         border-radius: 0;
         display:inline-block;
         text-transform: uppercase;
@@ -157,4 +150,3 @@
         }
     }
 }
-

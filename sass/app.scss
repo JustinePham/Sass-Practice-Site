@@ -43,17 +43,23 @@ body {
 .theme-darkgrey {
     color: $theme-darkgrey;
 }
+
 .text-right-align {
     text-align: right;
 }
+
 .text-left-align {
     text-align: left;
 }
+
 .text-center-align {
     text-align: center;
 }
 
-
 .hover-wrapper {
   background-color: rgba(0,0,0,1);
+}
+
+.xlarge-font {
+    font-size: x-large;
 }

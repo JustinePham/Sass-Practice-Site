@@ -220,10 +220,8 @@
     background-color: transparent;
     min-height: 300;
     background-size: cover;
-    background-position: center; }
-    .campaign-card .campaign-img-holder .campaign-img-buffer {
-      margin-top: 4;
-      min-height: 300; }
+    background-position: center;
+    position: relative; }
   .campaign-card .campaign-card-title {
     font-size: 16;
     font-weight: 700;
@@ -261,13 +259,9 @@
   padding: 0;
   color: white;
   padding: 0 10 0 10;
-  bottom: 0; }
-  .campaign-card-tags ul {
-    left: 0;
-    bottom: 0; }
-    .campaign-card-tags ul li {
-      float: left; }
-  .campaign-card-tags li.tag {
+  bottom: 0;
+  position: absolute; }
+  .campaign-card-tags .tag {
     border-radius: 0;
     display: inline-block;
     text-transform: uppercase;
@@ -280,7 +274,7 @@
     line-height: 18px;
     margin-right: 11px;
     margin-bottom: 10px; }
-    .campaign-card-tags li.tag:after {
+    .campaign-card-tags .tag:after {
       left: 100%;
       top: 50%;
       border: solid transparent;
@@ -295,9 +289,9 @@
       margin-top: -12px;
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out; }
-    .campaign-card-tags li.tag:hover {
+    .campaign-card-tags .tag:hover {
       background-color: #ddd; }
-      .campaign-card-tags li.tag:hover:after {
+      .campaign-card-tags .tag:hover:after {
         border-left-color: #ddd; }
 
 .modal-header {
@@ -449,5 +443,8 @@ body {
 
 .hover-wrapper {
   background-color: black; }
+
+.xlarge-font {
+  font-size: x-large; }
 
 /*# sourceMappingURL=app.css.map */
