@@ -167,7 +167,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
-  padding: 0 5 0 5; }
+  padding: 10px 5px 0 5px; }
 
 .homepage-slider .carousel-inner .item {
   background-color: gainsboro;
@@ -176,16 +176,37 @@
   min-height: 300px; }
 
 .homepage-campaigns .campaign-card-wrapper {
-  -webkit-flex: 1;
-  /* Safari 6.1+ */
-  -ms-flex: 1;
-  /* IE 10 */
-  flex: 1;
-  margin: 10 5 10 5; }
+  /*  -webkit-flex: 1;  /* Safari 6.1+ */
+  /* -ms-flex: 1;  /* IE 10 */
+  /* flex: 1; */
+  margin: 0 5px 10px 5px;
+  width: calc((100% / 4) - 10px);
+  background-color: white;
+  display: flex; }
+  @media (min-width: 992px) and (max-width: 1280px) {
+    .homepage-campaigns .campaign-card-wrapper {
+      margin: 0 5px 10px 5px;
+      width: calc((100% / 3) - 10px);
+      background-color: white;
+      display: flex; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .homepage-campaigns .campaign-card-wrapper {
+      margin: 0 5px 10px 5px;
+      width: calc((100% / 2) - 10px);
+      background-color: white;
+      display: flex; } }
+  @media (min-width: 376px) and (max-width: 767px) {
+    .homepage-campaigns .campaign-card-wrapper {
+      margin: 0 5px 10px 5px;
+      width: calc(100% - 10px);
+      background-color: white;
+      display: flex; } }
 
 .campaign-card {
   background-color: white;
-  width: 100%; }
+  width: 100%;
+  flex-direction: column;
+  display: flex; }
   .campaign-card .campaign-card-header {
     width: 100%;
     padding: 10;
@@ -244,12 +265,15 @@
     font-family: Montserrat, sans-serif;
     font-size: 12;
     color: #bfbfbf;
-    padding: 15;
-    font-weight: 100; }
+    padding: 15px;
+    font-weight: 100px;
+    width: 100%;
+    margin-top: auto;
+    align-self: flex-end; }
     .campaign-card .campaign-footer span.netgained {
       width: 100%;
       font-size: 20;
-      font-weight: 600;
+      font-weight: 600px;
       letter-spacing: 1; }
 
 .campaign-card-tags {
@@ -444,7 +468,14 @@ body {
   text-align: center; }
 
 .hover-wrapper {
-  background-color: black; }
+  background-color: black;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: flex; }
+
+.large-font {
+  font-size: large; }
 
 .xlarge-font {
   font-size: x-large; }
